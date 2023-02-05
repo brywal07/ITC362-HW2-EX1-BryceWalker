@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ITC362-HW1-EX2</string>
+    <string name="question_text">Canberra is the capital of Australia.</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="correct_snack">Correct!</string>
+    <string name="incorrect_snack">Incorrect!</string>
+</resources>
