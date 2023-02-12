@@ -7,6 +7,7 @@ android {
     namespace 'com.bignerdranch.android.itc362_hw1_ex2'
     compileSdk 33
 
+
     defaultConfig {
         applicationId "com.bignerdranch.android.itc362_hw1_ex2"
         minSdk 24
@@ -29,6 +30,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding true
     }
 }
 
