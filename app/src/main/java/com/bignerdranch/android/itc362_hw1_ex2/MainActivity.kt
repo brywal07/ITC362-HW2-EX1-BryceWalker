@@ -47,6 +47,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "ERROR!", Toast.LENGTH_SHORT).show()
             }
         }
+        binding.questionTextView.setOnClickListener{
+            currentIndex = (currentIndex + 1) % questionBank.size
+            updateQuestion()
+        }
 
         updateQuestion()
     }
