@@ -11,4 +11,5 @@
     <string name="correct_snack">Correct!</string>
     <string name="incorrect_snack">Incorrect!</string>
     <string name="next_button">Next</string>
+    <string name="prev_button">Prev</string>
 </resources>

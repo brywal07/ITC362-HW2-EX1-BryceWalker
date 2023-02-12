@@ -37,7 +37,15 @@ class MainActivity : AppCompatActivity() {
         }
         binding.nextButton.setOnClickListener{
             currentIndex = (currentIndex + 1) % questionBank.size
+            updateQuestion()
+        }
+        binding.previousButton.setOnClickListener{
+            if(currentIndex > 0) {
+                currentIndex = (currentIndex - 1) % questionBank.size
                 updateQuestion()
+            }else{
+                Toast.makeText(this, "ERROR!", Toast.LENGTH_SHORT).show()
+            }
         }
         binding.questionTextView.setOnClickListener{
             currentIndex = (currentIndex + 1) % questionBank.size
@@ -48,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun updateQuestion(){
         val questionTextResId = questionBank[currentIndex].textResId
-            binding.questionTextView.setText(questionTextResId)
+        binding.questionTextView.setText(questionTextResId)
     }
     private fun checkAnswer(userAnswer: Boolean){
         val correctAnswer = questionBank[currentIndex].answer
